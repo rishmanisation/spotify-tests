@@ -2,9 +2,7 @@
 import spotipy
 from  spotipy import util
 import unittest
-import pprint
 import sys
-import simplejson as json
 
 class TestSpotipy(unittest.TestCase):
 
