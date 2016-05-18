@@ -29,15 +29,19 @@ where your 'username' is the Spotify username that you use to login. If you use 
 When you run the script for the first time, it might throw up an error that tells you to assign the following as environment variables:
 
 SPOTIPY_CLIENT_ID
+
 SPOTIPY_CLIENT_SECRET
+
 SPOTIPY_REDIRECT_URI
 
 To fix this, visit developer.spotify.com. There, click on the tab that says 'My Apps' and create a new 'App'. Once this is done, it should show you a window where you can edit a bunch of fields. It will also show you the Client ID and the Client Secret, and there will be an empty field where you can enter a redirect URI. Enter "http://localhost:8888/callback/" (without the quotation marks) in that field and click 'Add'. Then, go all the way down to the bottom of the page and hit 'Save'.
 
-Open up a terminal window and type the following lines:
+Open up a terminal window and type the following lines (hit Enter after typing each line):
 
-export SPOTIPY_CLIENT_ID=<the value of the Client ID field>
-export SPOTIPY_CLIENT_SECRET=<the value of the Client Secret field>
+export SPOTIPY_CLIENT_ID=the value of the Client ID field
+
+export SPOTIPY_CLIENT_SECRET=the value of the Client Secret field
+
 export SPOTIPY_REDIRECT_URI=http://localhost:8888/callback/
 
 When you run the program after doing this, it will try to link to your app. Open up the link that shows up on the terminal window in a browser. It will redirect you to another URL. Just copy this URL into the terminal window and hit enter. This authentication is only required once per app.
