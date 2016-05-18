@@ -7,8 +7,7 @@ import sys
 import simplejson as json
 
 '''
-All tests require authentication. Hence, this is checked in the main function.
-
+All tests require authentication. 
 '''
 
 class TestSpotipy(unittest.TestCase):
