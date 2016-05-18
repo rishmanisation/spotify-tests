@@ -6,10 +6,6 @@ import pprint
 import sys
 import simplejson as json
 
-'''
-All tests require authentication. 
-'''
-
 class TestSpotipy(unittest.TestCase):
 
     '''
@@ -65,7 +61,9 @@ if __name__ == '__main__':
         scope += 'user-library-modify '
         scope += 'user-read-private '
         scope += 'user-top-read'
-
+        '''
+        Checking for authentication, as all tests require it
+        '''
         token = util.prompt_for_user_token(username, scope)
         spotify = spotipy.Spotify(auth=token)
         spotify.trace = False
