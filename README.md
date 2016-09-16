@@ -10,7 +10,7 @@ The script was written in Python 2.7.9.
 
 The script can be installed by cloning this repository:
 
-git clone https://github.com/rishmanisation/spotify-tests/edit/master/README.md
+git clone https://github.com/rishmanisation/spotify-tests/
 
 If you don't have git installed, install git first using:
 
